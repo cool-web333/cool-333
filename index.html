@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Рита Бурмалда — Дождь</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #0d0d0d;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            min-height: 100vh;
+            width: 100vw;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .rain-text {
+            position: absolute;
+            color: #ffcc00; /* Ярко-желтый цвет */
+            font-weight: bold;
+            white-space: nowrap;
+            text-transform: lowercase;
+            font-size: 22px;
+            /* Направление анимации: сверху вниз */
+            animation: fall linear infinite;
+            top: -50px;
+        }
+
+        @keyframes fall {
+            0% {
+                top: -50px;
+                opacity: 0;
+            }
+            10% {
+                opacity: 1;
+            }
+            90% {
+                opacity: 1;
+            }
+            100% {
+                top: 105vh;
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="rain-text" style="left: 5%; animation-duration: 4s; animation-delay: 0s;">рита бурмалда</div>
+    <div class="rain-text" style="left: 20%; animation-duration: 3s; animation-delay: 1.5s;">рита бурмалда</div>
+    <div class="rain-text" style="left: 35%; animation-duration: 5s; animation-delay: 0.5s;">рита бурмалда</div>
+    <div class="rain-text" style="left: 50%; animation-duration: 3.5s; animation-delay: 2s;">рита бурмалда</div>
+    <div class="rain-text" style="left: 65%; animation-duration: 4.5s; animation-delay: 1s;">рита бурмалда</div>
+    <div class="rain-text" style="left: 80%; animation-duration: 3s; animation-delay: 2.5s;">рита бурмалда</div>
+    <div class="rain-text" style="left: 90%; animation-duration: 5.5s; animation-delay: 0s;">рита бурмалда</div>
+
+    <div class="rain-text" style="left: 12%; animation-duration: 4.2s; animation-delay: 3s;">рита бурмалда</div>
+    <div class="rain-text" style="left: 28%; animation-duration: 3.2s; animation-delay: 0.8s;">рита бурмалда</div>
+    <div class="rain-text" style="left: 45%; animation-duration: 4.8s; animation-delay: 2.2s;">рита бурмалда</div>
+    <div class="rain-text" style="left: 58%; animation-duration: 3.7s; animation-delay: 1.1s;">рита бурмалда</div>
+    <div class="rain-text" style="left: 73%; animation-duration: 5.1s; animation-delay: 3.5s;">рита бурмалда</div>
+
+</body>
+</html>
